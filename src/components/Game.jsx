@@ -36,21 +36,24 @@ const Game = ({
         Dica sobre a palavra: <span>{pickedCategory}</span>, com
         <span> {letters.length}</span> letras
       </h3>
-      <p className="guessesCounter" >
+      <p className="guessesCounter">
         Você ainda tem
         <span> {guesses} </span>
         tentativas
       </p>
-      <div className="wordContainer">
-        {letters.map((letter, i) =>
-          guessedLetters.includes(letter) ? (
-            <span key={i} className="letter">
-              {letter}
-            </span>
-          ) : (
-            <span key={i} className="blankSquare"></span>
-          )
-        )}
+
+      <div className="centerContainer">
+        <div className="wordContainer">
+          {letters.map((letter, i) =>
+            guessedLetters.includes(letter) ? (
+              <span key={i} className="letter">
+                {letter}
+              </span>
+            ) : (
+              <span key={i} className="blankSquare"></span>
+            )
+          )}
+        </div>
       </div>
       <div className="letterContainer">
         <p>Tente adivinhar uma letra da palavra</p>
