@@ -48,24 +48,30 @@
 }
 
 @media screen and (max-width: 800px) {
+  .game h1 {
+    font-size: 2em;
+  }
   .wordContainer {
     padding: 0;
     border: 10px solid #ecfa00;
     display: flex;
     width: fit-content;
   }
-  .centerContainer{
+  .centerContainer {
     display: flex;
     justify-content: center;
   }
-  
+
   .letter,
   .blankSquare {
-    font-size: 30px;
+    font-size: 120%;
+    align-content: center;
     line-height: 1.5;
     border: 3px solid #000;
-    height: 40px;
-    width: 40px;
+    height: fit-content;
+    min-height: 30px;
+    min-width: 30px;
+    width: fit-content;
     text-transform: uppercase;
     background-color: #fff;
     color: #000;

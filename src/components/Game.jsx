@@ -33,7 +33,7 @@ const Game = ({
       </p>
       <h1> Adivinhe a palavra</h1>
       <h3 className="tip">
-        Dica sobre a palavra: <span>{pickedCategory}</span>, com
+        Dica sobre a palavra: <br /> <span>{pickedCategory}</span>, com
         <span> {letters.length}</span> letras
       </h3>
       <p className="guessesCounter">
